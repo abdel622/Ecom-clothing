@@ -1,24 +1,17 @@
 import './App.css';
-
-import HomePage from "./pages/homepage/homepage.component";
 import { Route, Routes } from 'react-router-dom';
 
+import HomePage from "./pages/homepage/homepage.component";
+import Shop from './pages/shop/shop.component';
 
-const CategoryPage = () =>{
-  return (
-    <div>
-      <h1>Hello Again!</h1>
-    </div>
-  )
 
-}
 
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/:category/" element={<CategoryPage />} />
+        <Route path="/shop" element={<Shop />} />
       </Routes>
     </div>
   );
