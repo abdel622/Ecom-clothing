@@ -6,7 +6,7 @@ import './homepage.styles.scss';
 
 const HomePage = () => {
   let location = useLocation();
-  console.log(location)
+  // console.log(location)
   return (<div className='homepage'>
     <Directory />    
   </div>)
